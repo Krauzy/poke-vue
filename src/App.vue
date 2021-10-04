@@ -227,10 +227,6 @@ html {
   border: 3px solid var(--normal-color);
 }
 
-.border-ground {
-  border: 3px solid var(--poison-color);
-}
-
 .border-psychic {
   border: 3px solid var(--psychic-color);
 }
