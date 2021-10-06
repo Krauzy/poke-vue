@@ -26,7 +26,7 @@ const P = new Pokedex({
   timeout: 20 * 1000,
   cache: true,
   cacheImages: true,
-  limit: 151,
+//  limit: 151,
 });
 export default {
   name: "Pokemons",
