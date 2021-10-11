@@ -179,71 +179,161 @@ html {
   border: 3px solid var(--flying-color);
 }
 
+.border-flying:hover {
+  background-color: var(--flying-color);
+  cursor: pointer;
+}
+
 .border-bug {
   border: 3px solid var(--bug-color);
+}
+
+.border-bug:hover {
+  background-color: var(--bug-color);
+  cursor: pointer;
 }
 
 .border-dragon {
   border: 3px solid var(--dragon-color);
 }
 
+.border-dragon:hover {
+  background-color: var(--dragon-color);
+  cursor: pointer;
+}
+
 .border-dark {
   border: 3px solid var(--dark-color);
+}
+
+.border-dark:hover {
+  background-color: var(--dark-color);
+  cursor: pointer;
 }
 
 .border-electric {
   border: 3px solid var(--electric-color);
 }
 
+.border-electric:hover {
+  background-color: var(--electric-color);
+  cursor: pointer;
+}
+
 .border-fairy {
   border: 3px solid var(--fairy-color);
+}
+
+.border-fairy:hover {
+  background-color: var(--fairy-color);
+  cursor: pointer;
 }
 
 .border-fighting {
   border: 3px solid var(--fighting-color);
 }
 
+.border-fighting:hover {
+  background-color: var(--fighting-color);
+  cursor: pointer;
+}
+
 .border-fire {
   border: 3px solid var(--fire-color);
+}
+
+.border-fire:hover {
+  background-color: var(--fire-color);
+  cursor: pointer;
 }
 
 .border-ghost {
   border: 3px solid var(--ghost-color);
 }
 
+.border-ghost:hover {
+  background-color: var(--ghost-color);
+  cursor: pointer;
+}
+
 .border-grass {
   border: 3px solid var(--grass-color);
+}
+
+.border-grass:hover {
+  background-color: var(--grass-color);
+  cursor: pointer;
 }
 
 .border-ground {
   border: 3px solid var(--ground-color);
 }
 
+.border-ground:hover {
+  background-color: var(--ground-color);
+  cursor: pointer;
+}
+
 .border-ice {
   border: 3px solid var(--ice-color);
+}
+
+.border-ice:hover {
+  background-color: var(--ice-color);
+  cursor: pointer;
 }
 
 .border-normal {
   border: 3px solid var(--normal-color);
 }
 
+.border-normal:hover {
+  background-color: var(--normal-color);
+  cursor: pointer;
+}
+
 .border-psychic {
   border: 3px solid var(--psychic-color);
+}
+
+.border-psychic:hover {
+  background-color: var(--psychic-color);
+  cursor: pointer;
 }
 
 .border-poison {
   border: 3px solid var(--poison-color);
 }
 
+.border-poison:hover {
+  background-color: var(--poison-color);
+  cursor: pointer;
+}
+
 .border-rock {
   border: 3px solid var(--rock-color);
+}
+
+.border-rock:hover {
+  background-color: var(--rock-color);
+  cursor: pointer;
 }
 
 .border-steel {
   border: 3px solid var(--steel-color);
 }
 
+.border-steel:hover {
+  background-color: var(--steel-color);
+  cursor: pointer;
+}
+
 .border-water {
   border: 3px solid var(--water-color);
+}
+
+.border-water:hover {
+  background-color: var(--water-color);
+  cursor: pointer;
 }
 </style>

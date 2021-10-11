@@ -21,6 +21,7 @@
 <script>
 import { Pokedex } from "pokeapi-js-wrapper";
 import PokemonCard from "@/components/PokemonCard.vue";
+import Single from "../single.js";
 
 const P = new Pokedex({
   timeout: 20 * 1000,
@@ -45,17 +46,22 @@ export default {
   methods: {
     async getPokemonNames() {
       if (this.stext == null || this.stext == undefined || this.stext == "") {
-        const response = await P.getPokemonsList();
-        this.pokemons = Array.from(response.results, (e) => e.name);
+        if (Single.instance === undefined) {
+          const response = await P.getPokemonsList();
+          this.pokemons = Array.from(response.results, (e) => e.name).slice(
+            0,
+            898
+          );
+          Single.loadInstance();
+          Single.instance.pokemonNames = this.pokemons;
+        } else this.pokemons = Single.instance.pokemonNames;
         this.palert = false;
       } else {
-        try {
-          const response = await P.getPokemonByName(this.stext);
-          this.pokemons.push(response.name);
-          this.palert = false;
-        } catch {
-          this.palert = true;
-        }
+        this.pokemons = Single.instance.pokemonNames.filter((name) => {
+          return name.toUpperCase().includes(this.stext.toUpperCase());
+        });
+        if (this.pokemons.length > 0) this.palert = false;
+        else this.palert = true;
       }
     },
   },
